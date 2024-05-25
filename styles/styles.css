@@ -1,0 +1,219 @@
+/* GENERAL ITEMS */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  scroll-behavior: smooth;
+}
+:root {
+  --main-bg-color: #cfafc5;
+  --gradient-color-A: rgba(245, 198, 176, 0.5);
+  --gradient-color-B: rgba(253, 88, 5, 0.98);
+  --detail-color: rgb(204, 48, 1);
+  --link-main-text-color: #fff;
+  --link-bg-color: rgb(236, 226, 226);
+  --line-color: #f5a67f;
+  --border-color: #fff;
+  --white-color: white;
+  --black-color: black;
+}
+body {
+  background-color: var(--main-bg-color);
+}
+h1 {
+  padding-left: 20px;
+  font-size: 1.7rem;
+  color: var(--white-color);
+  font-weight: bold;
+  text-shadow: 1px 1px 2px var(--black-color);
+}
+h2 {
+  padding: 20px;
+  font-size: 1.3rem;
+  color: var(--white-color);
+  font-weight: bold;
+  text-shadow: 1px 1px 2px var(--black-color);
+}
+/*-- END GENERAL ITEMS--*/
+/*-- BANNER--*/
+.banner {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(
+      to bottom,
+      var(--gradient-color-A),
+      var(--gradient-color-B)
+    ),
+    url(../img/fondo.jpg);
+  background-size: cover;
+  background-position: center;
+}
+span {
+  color: var(--detail-color);
+  font-weight: bold;
+  text-transform: unset;
+}
+.navbar {
+  width: 100%;
+  margin: auto;
+  padding: 35px 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.navbar ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 13px;
+  position: relative;
+}
+.navbar ul li a {
+  text-decoration: none;
+  color: var(--link-main-text-color);
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: bold;
+  transition: 0.25s ease-in;
+}
+.navbar ul li a:hover {
+  color: var(--link-bg-color);
+  background-color: var(--link-main-text-color);
+  border-radius: 5px;
+  padding: 1px;
+  box-shadow: #7f7f7f 1px 1px 5px;
+}
+/* END OF BANNER */
+/* CONTENT */
+.content {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  color: var(--white-color);
+}
+.content h1 {
+  font-size: 35px;
+  margin-top: 80px;
+}
+.content p {
+  margin: 20px auto;
+  font-weight: 100;
+  line-height: 25px;
+  font-size: 20px;
+}
+/* END CONTENT */
+/* CARDS SECTION */
+#main {
+  background-color: #ed9e7e;
+  width: 100%;
+}
+.card-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: auto;
+  padding: 20px;
+}
+.card {
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+  padding: 20px;
+  background-color: var(--white-color);
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  color: #7f7f7f;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  cursor: pointer;
+  transition: 0.25s;
+}
+.card:hover {
+  background-color: var(--line-color);
+  color: var(--white-color);
+}
+.card p {
+  font-size: small;
+}
+.fab {
+  color: var(--detail-color);
+  font-size: 50px;
+  line-height: 80px;
+}
+/* END CARDS SECTION */
+/* SERVICES SECTION */
+.services {
+  padding: 50px;
+  text-align: center;
+  background-color: var(--gradient-color-B);
+  height: 25%;
+  margin-top: -10px;
+  color: white;
+}
+.services h1 {
+  font-size: 35px;
+  margin-top: 80px;
+}
+.services p {
+  margin: 20px auto;
+  font-weight: 100;
+  line-height: 25px;
+  font-size: 20px;
+}
+/* END SERVICES SECTION */
+/* FOOTER */
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer-item {
+  margin: 10px 0;
+}
+.footer-item a {
+  color: #e2830f;
+  margin: 0 10px;
+  font-size: 20px;
+  transition: color 0.3s;
+  text-decoration: none;
+}
+.footer-item a:hover {
+  color: var(--detail-color);
+}
+.footer-item i {
+  margin-right: 8px;
+}
+@media (min-width: 1044px) {
+  .footer-container {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .footer-item {
+    margin: 0 20px;
+  }
+}
+/* ---------- END FOOTER ---------- */
+/* Styles for desktop screens */
+@media (min-width: 1025px) {
+  body {
+    background-color: var(--main-bg-color);
+  }
+}
+/* Tablet styles */
+@media (min-width: 768px) and (max-width: 1024px) {
+  body {
+    background-color: lightgreen;
+  }
+}
+/* Styles for cell phones from horizontal position */
+@media (max-width: 767px) {
+  body {
+    background-color: lightcoral;
+  }
+}
