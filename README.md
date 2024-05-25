@@ -16,7 +16,7 @@ Proyecto realizado en CODO A CODO.
 - Patricia Ruiz Diaz
 - Walter Javier Segurado
 
-Para ver el proyecto <img src="./img/giphy.gif" width="40"> haz click en <a href="https://tpfinalgrupo5.netlify.app">este enlace.</a>
+Para ver el proyecto <img src="./img/giphy.gif" width="40"> haz click en <a href="https://tpfinal-frontend-codoacodo.netlify.app">este enlace.</a>
 
 ### Tecnologias aplicadas:
 
